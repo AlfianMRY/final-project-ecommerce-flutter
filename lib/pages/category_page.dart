@@ -1,10 +1,14 @@
-import 'package:final_project_provider/pages/category_add_page.dart';
-import 'package:final_project_provider/pages/category_edit_page.dart';
-import 'package:final_project_provider/providers/category_provider.dart';
+// import 'package:final_project_provider/pages/category_add_page.dart';
+// import 'package:final_project_provider/pages/category_edit_page.dart';
+// import 'package:final_project_provider/providers/category_provider.dart';
+// import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../providers/category_provider.dart';
 import '../utils/color.dart';
+import 'category_add_page.dart';
+import 'category_edit_page.dart';
 
 class CategoryPage extends StatefulWidget {
   const CategoryPage({super.key});

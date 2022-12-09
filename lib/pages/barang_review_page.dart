@@ -1,10 +1,13 @@
 // ignore_for_file: must_be_immutable
 
-import 'package:final_project_provider/providers/review_provider.dart';
-import 'package:final_project_provider/utils/color.dart';
+// import 'package:final_project_provider/providers/review_provider.dart';
+// import 'package:final_project_provider/utils/color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:provider/provider.dart';
+
+import '../providers/review_provider.dart';
+import '../utils/color.dart';
 
 class BarangReviewPage extends StatefulWidget {
   var id;

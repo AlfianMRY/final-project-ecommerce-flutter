@@ -1,11 +1,9 @@
-// import 'dart:convert';
-// import 'package:http/http.dart' as http;
-import 'package:final_project_provider/pages/barang_detail_page.dart';
-import 'package:final_project_provider/providers/barang_provider.dart';
-import 'package:final_project_provider/utils/color.dart';
-// import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../providers/barang_provider.dart';
+import '../utils/color.dart';
+import 'barang_detail_page.dart';
 
 class BarangPage extends StatefulWidget {
   const BarangPage({super.key});

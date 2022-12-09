@@ -1,13 +1,16 @@
 // import 'package:final_project_provider/providers/barangProvider.dart';
-import 'package:final_project_provider/pages/barang_review_page.dart';
-import 'package:final_project_provider/providers/review_provider.dart';
-import 'package:final_project_provider/utils/color.dart';
+// import 'package:final_project_provider/pages/barang_review_page.dart';
+// import 'package:final_project_provider/providers/review_provider.dart';
+// import 'package:final_project_provider/utils/color.dart';
 // import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:provider/provider.dart';
 
+import '../providers/review_provider.dart';
+import '../utils/color.dart';
 import '../utils/currency_format.dart';
+import 'barang_review_page.dart';
 // import 'package:provider/provider.dart';
 
 class BarangDetailPage extends StatefulWidget {

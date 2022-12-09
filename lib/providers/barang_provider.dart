@@ -1,10 +1,10 @@
 import 'dart:convert';
-import 'package:final_project_provider/providers/token.dart';
+import 'package:final_project/providers/token.dart';
 import 'package:http/http.dart' as http;
 
-import 'package:final_project_provider/service/barang_services.dart';
 import 'package:flutter/cupertino.dart';
 import '../models/barang.dart';
+import '../service/barang_services.dart';
 // import 'dart:io';
 
 class BarangProvider extends Token with ChangeNotifier {

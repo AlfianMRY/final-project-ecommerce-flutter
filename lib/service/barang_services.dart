@@ -4,7 +4,7 @@ import '../models/barang.dart';
 
 class BarangServices {
   Future<List<Barang>> getAll(token) async {
-    Uri url = Uri.parse('https://api1.sib3.nurulfikri.com/api/admin/barang');
+    Uri url = Uri.parse('https://api1.sib3.nurulfikri.com/api/barang');
     final response = await http.get(url, headers: {
       'Authorization': 'Bearer ${token}',
     });

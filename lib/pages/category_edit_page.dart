@@ -2,11 +2,12 @@
 
 // ignore_for_file: must_be_immutable
 
-import 'package:final_project_provider/providers/category_provider.dart';
+// import 'package:final_project_provider/providers/category_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/category.dart';
 
+import '../providers/category_provider.dart';
 import '../utils/color.dart';
 
 class CategoryEditPage extends StatefulWidget {

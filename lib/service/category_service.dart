@@ -1,7 +1,9 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-import 'package:final_project_provider/models/category.dart';
+import '../models/category.dart';
+
+// import 'package:final_project_provider/models/category.dart';
 
 class CategoryServices {
   Future<List<Category>> getAll(token) async {

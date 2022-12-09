@@ -1,6 +1,9 @@
-import 'package:final_project_provider/pages/barang_page.dart';
-import 'package:final_project_provider/pages/category_page.dart';
+// import 'package:final_project_provider/pages/barang_page.dart';
+// import 'package:final_project_provider/pages/category_page.dart';
 import 'package:flutter/material.dart';
+
+import 'barang_page.dart';
+import 'category_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

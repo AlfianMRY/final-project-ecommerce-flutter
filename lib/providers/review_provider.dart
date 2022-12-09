@@ -1,9 +1,11 @@
 // import 'package:provider/provider.dart';
 
-import 'package:final_project_provider/providers/token.dart';
-import 'package:final_project_provider/service/review_services.dart';
+// import 'package:final_project_provider/providers/token.dart';
+// import 'package:final_project_provider/service/review_services.dart';
+import 'package:final_project/providers/token.dart';
 import 'package:flutter/cupertino.dart';
 import '../models/review.dart';
+import '../service/review_services.dart';
 
 class ReviewProvider extends Token with ChangeNotifier {
   final _service = ReviewServices();

@@ -1,12 +1,15 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:final_project_provider/utils/color.dart';
+// import 'package:final_project_provider/utils/color.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:final_project_provider/providers/barang_provider.dart';
+// import 'package:final_project_provider/providers/barang_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
+
+import '../providers/barang_provider.dart';
+import '../utils/color.dart';
 
 // ignore: must_be_immutable
 class BarangAddPage extends StatefulWidget {
@@ -29,7 +32,7 @@ class _BarangAddPage extends State<BarangAddPage> {
 
   final _formKey = GlobalKey<FormState>();
 
-  var token = '3129|pLdTvbDXN5Wk6jFtZQaDQwTgxa2j4YMxJwRRg9qV';
+  var token = '3187|fzHMS0qfMrflTW5QdkMx1yxtzQMR3LXMg0279KMg';
 
   File? image;
   List _menuItems = [];

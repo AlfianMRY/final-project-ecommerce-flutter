@@ -1,9 +1,10 @@
 // import 'dart:convert';
 
-import 'package:final_project_provider/providers/category_provider.dart';
+// import 'package:final_project_provider/providers/category_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../providers/category_provider.dart';
 import '../utils/color.dart';
 
 class CategoryAddPage extends StatefulWidget {

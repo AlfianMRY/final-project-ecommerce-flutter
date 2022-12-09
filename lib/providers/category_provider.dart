@@ -1,10 +1,13 @@
 import 'dart:convert';
 
-import 'package:final_project_provider/providers/token.dart';
-import 'package:final_project_provider/service/category_service.dart';
+// import 'package:final_project_provider/providers/token.dart';
+// import 'package:final_project_provider/service/category_service.dart';
+import 'package:final_project/providers/token.dart';
 import 'package:flutter/cupertino.dart';
 import '../models/category.dart';
 import 'package:http/http.dart' as http;
+
+import '../service/category_service.dart';
 
 class CategoryProvider extends Token with ChangeNotifier {
   final _service = CategoryServices();

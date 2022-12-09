@@ -1,25 +1,32 @@
-import 'package:final_project_provider/pages/barang_add_page.dart';
-import 'package:final_project_provider/pages/barang_detail_page.dart';
-import 'package:final_project_provider/pages/barang_page.dart';
-import 'package:final_project_provider/pages/barang_review_page.dart';
-import 'package:final_project_provider/pages/category_add_page.dart';
-import 'package:final_project_provider/pages/category_page.dart';
-import 'package:final_project_provider/pages/home_page.dart';
-import 'package:final_project_provider/providers/barang_provider.dart';
-import 'package:final_project_provider/providers/category_provider.dart';
-import 'package:final_project_provider/providers/review_provider.dart';
-// import 'package:final_project_provider/providers/barang.dart';
+import 'package:final_project/pages/barang_detail_page.dart';
+import 'package:final_project/pages/barang_page.dart';
+import 'package:final_project/view/splash.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-// import 'package:provider/provider.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'pages/barang_add_page.dart';
+import 'pages/barang_review_page.dart';
+import 'pages/category_add_page.dart';
+import 'pages/category_page.dart';
+import 'providers/barang_provider.dart';
+import 'providers/category_provider.dart';
+import 'providers/review_provider.dart';
+// import 'package:provider/provider.dart';
+// import 'package:provider/provider.dart';
+// import 'package:final_project/uifp//view/home.dart';
+// import 'package:final_project/uifp/view/splash.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({Key? key}) : super(key: key);
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -40,7 +47,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: HomePage(),
+        home: const Splash(),
         routes: {
           BarangPage.routeName: (context) => BarangPage(),
           BarangDetailPage.routeName: (context) => BarangDetailPage(),
@@ -51,5 +58,14 @@ class MyApp extends StatelessWidget {
         },
       ),
     );
+
+    // return MaterialApp(
+    //   debugShowCheckedModeBanner: false,
+    //   title: 'Final Project',
+    //   theme: ThemeData(
+    //     primarySwatch: Colors.orange,
+    //   ),
+    //   home: const Splash(),
+    // );
   }
 }
