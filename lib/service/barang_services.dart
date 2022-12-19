@@ -4,11 +4,12 @@ import '../models/barang.dart';
 
 class BarangServices {
   Future<List<Barang>> getAll(token) async {
-    Uri url = Uri.parse('https://api1.sib3.nurulfikri.com/api/barang');
+    Uri url = Uri.parse('https://api1.sib3.nurulfikri.com/api/admin/barang');
     final response = await http.get(url, headers: {
       'Authorization': 'Bearer ${token}',
     });
-    print('data : ' + response.statusCode.toString());
+    // print('data : ' + response.body.toString());
+    print('code : ' + response.statusCode.toString());
     if (response.statusCode == 200) {
       final hasil = (json.decode(response.body))['data'] as List;
       final barang = hasil.map((e) {

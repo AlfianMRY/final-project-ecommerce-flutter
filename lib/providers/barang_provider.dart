@@ -10,6 +10,7 @@ import '../service/barang_services.dart';
 class BarangProvider extends Token with ChangeNotifier {
   final _service = BarangServices();
   bool isLoading = false;
+  bool fav = false;
 
   List<Barang> _barang = [];
   List<Barang> get barang => _barang;
@@ -18,7 +19,7 @@ class BarangProvider extends Token with ChangeNotifier {
     isLoading = true;
     notifyListeners();
     final response = await _service.getAll(token);
-
+// print(response)
     _barang = response;
     isLoading = false;
     notifyListeners();

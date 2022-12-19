@@ -9,23 +9,25 @@ class Barang {
   int? stock;
   String? createdAt;
   String? updatedAt;
-  Null deletedAt;
+  String? deletedAt;
+  bool fav = false;
   // Category? category;
 
-  Barang({
-    this.id,
-    this.name,
-    this.categoryId,
-    this.image,
-    this.imagePath,
-    this.harga,
-    this.deskripsi,
-    this.stock,
-    this.createdAt,
-    this.updatedAt,
-    this.deletedAt,
-    // this.category,
-  });
+  Barang(
+      {this.id,
+      this.name,
+      this.categoryId,
+      this.image,
+      this.imagePath,
+      this.harga,
+      this.deskripsi,
+      this.stock,
+      this.createdAt,
+      this.updatedAt,
+      this.deletedAt,
+      this.fav = false
+      // this.category,
+      });
 
   Barang.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -39,6 +41,7 @@ class Barang {
     createdAt = json['created_at'];
     updatedAt = json['updated_at'];
     deletedAt = json['deleted_at'];
+    // fav = false;
     // category = json['category'] != null
     //     ? new Category.fromJson(json['category'])
     //     : null;
@@ -57,6 +60,7 @@ class Barang {
     data['created_at'] = this.createdAt;
     data['updated_at'] = this.updatedAt;
     data['deleted_at'] = this.deletedAt;
+    data['fav'] = this.fav;
     // if (this.category != null) {
     //   data['category'] = this.category!.toJson();
     // }
